@@ -270,3 +270,81 @@ img {
 .list-inline-item {
     width: 25px;
 }
+
+body {
+    margin: 0 auto;
+    padding: 0;
+}
+
+.all{
+   display: flex;
+   align-items: center;
+   gap: 1.5rem;
+   flex-wrap: wrap;
+}
+
+.all .image{
+   flex:1 1 70rem;
+}
+
+.all .image img{
+   width: 100%;
+}
+
+.all .text{
+   text-align: center;
+   flex:1 1 40rem;
+}
+
+.all .text h1{
+   font-size: 3rem;
+   color:var(--green-lig);
+}
+
+.all .text p{
+   padding:1rem 0;
+   line-height: 2;
+   font-size: 1.6rem;
+   color:var(--light-white);
+}
+
+@media (max-width:991px){
+
+   html{
+      font-size: 55%;
+   }
+
+   .all .text h1{
+      font-size: 8rem;
+   }
+
+}
+
+@media (max-width:768px){
+
+   
+
+   .all .text h1{
+      font-size: 6rem;
+   }
+
+}
+
+@media (max-width:450px){
+   .all .text h1{
+      font-size: 5rem;
+   }
+
+}
+
+@media (max-width:375px){
+
+    html{
+       font-size: 55%;
+    }
+ 
+    .all .text h1{
+       font-size: 3rem;
+    }
+ 
+ }
